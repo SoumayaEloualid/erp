@@ -1,0 +1,21 @@
+{
+    "frappe": {
+        "resolution": {
+            "commit_hash": null,
+            "branch": null
+        },
+        "required": [],
+        "idx": 1,
+        "version": "15.38.0"
+    },
+    "paylik_erp": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "205863e5c0b77df71e45b1f721aa275b439625b7",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 2,
+        "version": "0.0.1"
+    }
+}

@@ -1,0 +1,174 @@
+Traceback with variables (most recent call last):
+  File "apps/frappe/frappe/desk/page/setup_wizard/setup_wizard.py", line 81, in process_setup_stages
+    task.get("fn")(task.get("args"))
+      stages = [{'status': 'Updating global settings', 'fail_msg': 'Failed to update global settings', 'tasks': [{'fn': <function update_global_settings at 0x736aef15b560>, 'args': {'language': 'English', 'country': 'Morocco', 'timezone': 'Africa/Casablanca', 'currency': 'MAD', 'full_name': 'soumaya', 'email': 'eloualidsoumaya@gmail.com', 'password': 'marooc 4011'}, 'fail_msg': 'Failed to update global settings'}]}, {'status': 'Wrapping up', 'fail_msg': 'Failed to complete setup', 'tasks': [{'fn': <function run_post_setup_complete at 0x736aeddde840>, 'args': {'language': 'English', 'country': 'Morocco', 'timezone': 'Africa/Casablanca', 'currency': 'MAD', 'full_name': 'soumaya', 'email': 'eloualidsoumaya@gmail.com', 'password': 'marooc 4011'}, 'fail_msg': 'Failed to complete setup'}]}]
+      user_input = {'language': 'English', 'country': 'Morocco', 'timezone': 'Africa/Casablanca', 'currency': 'MAD', 'full_name': 'soumaya', 'email': 'eloualidsoumaya@gmail.com', 'password': '********'}
+      is_background_task = False
+      capture = <function capture at 0x736af0e39580>
+      current_task = {'fn': <function update_global_settings at 0x736aef15b560>, 'args': {'language': 'English', 'country': 'Morocco', 'timezone': 'Africa/Casablanca', 'currency': 'MAD', 'full_name': 'soumaya', 'email': 'eloualidsoumaya@gmail.com', 'password': 'marooc 4011'}, 'fail_msg': 'Failed to update global settings'}
+      idx = 0
+      stage = {'status': 'Updating global settings', 'fail_msg': 'Failed to update global settings', 'tasks': [{'fn': <function update_global_settings at 0x736aef15b560>, 'args': {'language': 'English', 'country': 'Morocco', 'timezone': 'Africa/Casablanca', 'currency': 'MAD', 'full_name': 'soumaya', 'email': 'eloualidsoumaya@gmail.com', 'password': 'marooc 4011'}, 'fail_msg': 'Failed to update global settings'}]}
+      task = {'fn': <function update_global_settings at 0x736aef15b560>, 'args': {'language': 'English', 'country': 'Morocco', 'timezone': 'Africa/Casablanca', 'currency': 'MAD', 'full_name': 'soumaya', 'email': 'eloualidsoumaya@gmail.com', 'password': 'marooc 4011'}, 'fail_msg': 'Failed to update global settings'}
+  File "apps/frappe/frappe/desk/page/setup_wizard/setup_wizard.py", line 111, in update_global_settings
+    create_or_update_user(args)
+      args = {'language': 'English', 'country': 'Morocco', 'timezone': 'Africa/Casablanca', 'currency': 'MAD', 'full_name': 'soumaya', 'email': 'eloualidsoumaya@gmail.com', 'password': '********'}
+  File "apps/frappe/frappe/desk/page/setup_wizard/setup_wizard.py", line 224, in create_or_update_user
+    user.insert()
+      args = {'language': 'English', 'country': 'Morocco', 'timezone': 'Africa/Casablanca', 'currency': 'MAD', 'full_name': 'soumaya', 'email': 'eloualidsoumaya@gmail.com', 'password': '********'}
+      email = 'eloualidsoumaya@gmail.com'
+      first_name = 'soumaya'
+      last_name = ''
+      user = <User: eloualidsoumaya@gmail.com>
+      _mute_emails = False
+  File "apps/frappe/frappe/model/document.py", line 315, in insert
+    self.run_post_save_methods()
+      self = <User: eloualidsoumaya@gmail.com>
+      ignore_permissions = None
+      ignore_links = None
+      ignore_if_duplicate = False
+      ignore_mandatory = None
+      set_name = None
+      set_child_names = True
+      d = <UserSocialLogin: u147elfke1 parent=eloualidsoumaya@gmail.com>
+  File "apps/frappe/frappe/model/document.py", line 1128, in run_post_save_methods
+    self.run_method("on_update")
+      self = <User: eloualidsoumaya@gmail.com>
+  File "apps/frappe/frappe/model/document.py", line 962, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+      self = <User: eloualidsoumaya@gmail.com>
+      method = 'on_update'
+      args = ()
+      kwargs = {}
+      fn = <function Document.run_method.<locals>.fn at 0x736aef9abe20>
+  File "apps/frappe/frappe/model/document.py", line 1322, in composer
+    return composed(self, method, *args, **kwargs)
+      self = <User: eloualidsoumaya@gmail.com>
+      args = ()
+      kwargs = {}
+      hooks = [<function clear_doctype_notifications at 0x736af0f93600>, <function process_workflow_actions at 0x736aedb32340>, <function attach_files_to_document at 0x736af2897420>, <function apply at 0x736aedddc180>, <function update_due_date at 0x736aedddc360>, <function apply_permissions_for_non_standard_user_type at 0x736af0f92de0>]
+      method = 'on_update'
+      doc_events = {'*': {'on_update': ['frappe.desk.notifications.clear_doctype_notifications', 'frappe.workflow.doctype.workflow_action.workflow_action.process_workflow_actions', 'frappe.core.doctype.file.utils.attach_files_to_document', 'frappe.automation.doctype.assignment_rule.assignment_rule.apply', 'frappe.automation.doctype.assignment_rule.assignment_rule.update_due_date', 'frappe.core.doctype.user_type.user_type.apply_permissions_for_non_standard_user_type'], 'after_rename': ['frappe.desk.notifications.clear_doctype_notifications'], 'on_cancel': ['frappe.desk.notifications.clear_doctype_notifications', 'frappe.workflow.doctype.workflow_action.workflow_action.process_workflow_actions', 'frappe.automation.doctype.assignment_rule.assignment_rule.apply'], 'on_trash': ['frappe.desk.notifications.clear_doctype_notifications', 'frappe.workflow.doctype.workflow_action.workflow_action.process_workflow_actions'], 'on_update_after_submit': ['frappe.workflow.doctype.workflow_action.workflow_action.process_w...
+      handler = 'frappe.core.doctype.user_type.user_type.apply_permissions_for_non_standard_user_type'
+      composed = <function Document.hook.<locals>.compose.<locals>.runner at 0x736aef9abce0>
+      compose = <function Document.hook.<locals>.compose at 0x736aef9a89a0>
+      f = <function Document.run_method.<locals>.fn at 0x736aef9abe20>
+  File "apps/frappe/frappe/model/document.py", line 1304, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+      self = <User: eloualidsoumaya@gmail.com>
+      method = 'on_update'
+      args = ()
+      kwargs = {}
+      add_to_return_value = <function Document.hook.<locals>.add_to_return_value at 0x736aef9aaac0>
+      fn = <function Document.run_method.<locals>.fn at 0x736aef9abe20>
+      hooks = (<function clear_doctype_notifications at 0x736af0f93600>, <function process_workflow_actions at 0x736aedb32340>, <function attach_files_to_document at 0x736af2897420>, <function apply at 0x736aedddc180>, <function update_due_date at 0x736aedddc360>, <function apply_permissions_for_non_standard_user_type at 0x736af0f92de0>)
+  File "apps/frappe/frappe/model/document.py", line 959, in fn
+    return method_object(*args, **kwargs)
+      self = <User: eloualidsoumaya@gmail.com>
+      args = ()
+      kwargs = {}
+      method_object = <bound method User.on_update of <User: eloualidsoumaya@gmail.com>>
+      method = 'on_update'
+  File "apps/frappe/frappe/core/doctype/user/user.py", line 206, in on_update
+    frappe.enqueue(
+      self = <User: eloualidsoumaya@gmail.com>
+      now = None
+  File "apps/frappe/frappe/__init__.py", line 2305, in enqueue
+    return frappe.utils.background_jobs.enqueue(*args, **kwargs)
+      args = ('frappe.core.doctype.user.user.create_contact',)
+      kwargs = {'user': <User: eloualidsoumaya@gmail.com>, 'ignore_mandatory': True, 'now': None, 'enqueue_after_commit': True}
+      frappe = <module 'frappe' from 'apps/frappe/frappe/__init__.py'>
+  File "apps/frappe/frappe/utils/background_jobs.py", line 121, in enqueue
+    q = get_queue(queue, is_async=is_async)
+      method = 'frappe.core.doctype.user.user.create_contact'
+      queue = 'default'
+      timeout = None
+      event = None
+      is_async = True
+      job_name = None
+      now = None
+      enqueue_after_commit = True
+      on_success = None
+      on_failure = None
+      at_front = False
+      job_id = 'paylik::2692a9f1-f1d3-4942-9713-ef2fb5021cbd'
+      deduplicate = False
+      kwargs = {'user': <User: eloualidsoumaya@gmail.com>, 'ignore_mandatory': True}
+      call_directly = False
+  File "apps/frappe/frappe/utils/background_jobs.py", line 432, in get_queue
+    return Queue(generate_qname(qtype), connection=get_redis_conn(), is_async=is_async)
+      qtype = 'default'
+      is_async = True
+  File "env/lib/python3.12/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+    return self(f, *args, **kw)
+      args = ()
+      kw = {}
+      f = <function get_redis_conn at 0x736af1a1cae0>
+      self = <Retrying object at 0x736af2321610 (stop=<tenacity.stop.stop_after_attempt object at 0x736af1a11130>, wait=<tenacity.wait.wait_fixed object at 0x736af1a11160>, sleep=<function sleep at 0x736af249f380>, retry=<tenacity.retry.retry_if_exception_type object at 0x736af1a110a0>, before=<function before_nothing at 0x736af5217880>, after=<function after_nothing at 0x736af294a2a0>)>
+  File "env/lib/python3.12/site-packages/tenacity/__init__.py", line 379, in __call__
+    do = self.iter(retry_state=retry_state)
+      self = <Retrying object at 0x736af2321610 (stop=<tenacity.stop.stop_after_attempt object at 0x736af1a11130>, wait=<tenacity.wait.wait_fixed object at 0x736af1a11160>, sleep=<function sleep at 0x736af249f380>, retry=<tenacity.retry.retry_if_exception_type object at 0x736af1a110a0>, before=<function before_nothing at 0x736af5217880>, after=<function after_nothing at 0x736af294a2a0>)>
+      fn = <function get_redis_conn at 0x736af1a1cae0>
+      args = ()
+      kwargs = {}
+      retry_state = <RetryCallState 126903123774832: attempt #5; slept for 4.0; last result: failed (ConnectionError Error 111 connecting to 127.0.0.1:11311. Connection refused.)>
+      do = <tenacity.DoAttempt object at 0x736aef9d0500>
+  File "env/lib/python3.12/site-packages/tenacity/__init__.py", line 325, in iter
+    raise retry_exc.reraise()
+      self = <Retrying object at 0x736af2321610 (stop=<tenacity.stop.stop_after_attempt object at 0x736af1a11130>, wait=<tenacity.wait.wait_fixed object at 0x736af1a11160>, sleep=<function sleep at 0x736af249f380>, retry=<tenacity.retry.retry_if_exception_type object at 0x736af1a110a0>, before=<function before_nothing at 0x736af5217880>, after=<function after_nothing at 0x736af294a2a0>)>
+      retry_state = <RetryCallState 126903123774832: attempt #5; slept for 4.0; last result: failed (ConnectionError Error 111 connecting to 127.0.0.1:11311. Connection refused.)>
+      fut = <Future at 0x736aef9f00b0 state=finished raised ConnectionError>
+      is_explicit_retry = False
+      retry_exc = RetryError(<Future at 0x736aef9f00b0 state=finished raised ConnectionError>)
+  File "env/lib/python3.12/site-packages/tenacity/__init__.py", line 158, in reraise
+    raise self.last_attempt.result()
+      self = RetryError(<Future at 0x736aef9f00b0 state=finished raised ConnectionError>)
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+      self = None
+      timeout = None
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+      self = None
+  File "env/lib/python3.12/site-packages/tenacity/__init__.py", line 382, in __call__
+    result = fn(*args, **kwargs)
+      self = <Retrying object at 0x736af2321610 (stop=<tenacity.stop.stop_after_attempt object at 0x736af1a11130>, wait=<tenacity.wait.wait_fixed object at 0x736af1a11160>, sleep=<function sleep at 0x736af249f380>, retry=<tenacity.retry.retry_if_exception_type object at 0x736af1a110a0>, before=<function before_nothing at 0x736af5217880>, after=<function after_nothing at 0x736af294a2a0>)>
+      fn = <function get_redis_conn at 0x736af1a1cae0>
+      args = ()
+      kwargs = {}
+      retry_state = <RetryCallState 126903123774832: attempt #5; slept for 4.0; last result: failed (ConnectionError Error 111 connecting to 127.0.0.1:11311. Connection refused.)>
+      do = <tenacity.DoAttempt object at 0x736aef9d0500>
+  File "apps/frappe/frappe/utils/background_jobs.py", line 473, in get_redis_conn
+    return get_redis_connection_without_auth()
+      username = None
+      password = ********
+      cred = {}
+  File "apps/frappe/frappe/utils/background_jobs.py", line 495, in get_redis_connection_without_auth
+    _redis_queue_conn = RedisQueue.get_connection()
+  File "apps/frappe/frappe/utils/redis_queue.py", line 35, in get_connection
+    conn.ping()
+      cls = <class 'frappe.utils.redis_queue.RedisQueue'>
+      username = None
+      password = ********
+      conn = Redis<ConnectionPool<Connection<host=127.0.0.1,port=11311,db=0>>>
+  File "env/lib/python3.12/site-packages/redis/commands/core.py", line 1205, in ping
+    return self.execute_command("PING", **kwargs)
+      self = Redis<ConnectionPool<Connection<host=127.0.0.1,port=11311,db=0>>>
+      kwargs = {}
+  File "env/lib/python3.12/site-packages/redis/client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+      self = Redis<ConnectionPool<Connection<host=127.0.0.1,port=11311,db=0>>>
+      args = ('PING',)
+      options = {}
+      pool = ConnectionPool<Connection<host=127.0.0.1,port=11311,db=0>>
+      command_name = 'PING'
+  File "env/lib/python3.12/site-packages/redis/connection.py", line 1457, in get_connection
+    connection.connect()
+      self = ConnectionPool<Connection<host=127.0.0.1,port=11311,db=0>>
+      command_name = 'PING'
+      keys = ********
+      options = {}
+      connection = Connection<host=127.0.0.1,port=11311,db=0>
+  File "env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+      self = Connection<host=127.0.0.1,port=11311,db=0>
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11311. Connection refused.{"language": "English", "country": "Morocco", "timezone": "Africa/Casablanca", "currency": "MAD", "full_name": "soumaya", "email": "eloualidsoumaya@gmail.com", "password": "marooc 4011"}

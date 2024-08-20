@@ -1,0 +1,300 @@
+2024-08-19 02:28:17,154 DEBUG cd frappe-bench && python3 -m venv env
+2024-08-19 02:28:20,583 DEBUG cd frappe-bench && /home/soumaya/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-08-19 02:28:23,646 DEBUG cd frappe-bench && /home/soumaya/frappe-bench/env/bin/python -m pip install --quiet wheel
+2024-08-19 02:28:25,866 LOG Getting frappe
+2024-08-19 02:28:25,866 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2024-08-19 02:28:45,238 LOG Installing frappe
+2024-08-19 02:28:45,239 DEBUG cd /home/soumaya/frappe-bench && /home/soumaya/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/soumaya/frappe-bench/apps/frappe 
+2024-08-19 02:32:22,128 DEBUG cd /home/soumaya/frappe-bench/apps/frappe && yarn install --check-files
+2024-08-19 02:33:36,709 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-08-19 02:33:36,709 DEBUG cd frappe-bench && bench build
+2024-08-19 02:33:36,821 INFO /usr/local/bin/bench build
+2024-08-19 02:33:56,354 LOG setting up backups
+2024-08-19 02:33:56,371 LOG backups were set up
+2024-08-19 02:33:56,371 INFO Bench frappe-bench initialized
+2024-08-19 02:33:56,871 INFO /usr/local/bin/bench start
+2024-08-19 02:33:57,249 INFO /usr/local/bin/bench schedule
+2024-08-19 02:33:57,261 INFO /usr/local/bin/bench worker
+2024-08-19 02:33:57,332 INFO /usr/local/bin/bench serve --port 8000
+2024-08-19 02:33:57,361 INFO /usr/local/bin/bench watch
+2024-08-19 02:35:08,271 INFO /usr/local/bin/bench new-site paylik
+2024-08-19 02:36:00,029 INFO /usr/local/bin/bench --site paylik add-to-hosts
+2024-08-19 02:36:15,066 INFO /usr/local/bin/bench start
+2024-08-19 02:36:15,436 INFO /usr/local/bin/bench serve --port 8000
+2024-08-19 02:36:15,472 INFO /usr/local/bin/bench watch
+2024-08-19 02:36:15,498 INFO /usr/local/bin/bench worker
+2024-08-19 02:36:15,547 INFO /usr/local/bin/bench schedule
+2024-08-19 02:41:16,051 INFO /usr/local/bin/bench get-app https://SoumayaEloualid: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@github.com/Paylik-Morocco/paylik-erp.git
+2024-08-19 02:41:16,061 LOG Getting paylik-erp
+2024-08-19 02:41:16,061 DEBUG cd ./apps && git clone https://SoumayaEloualid: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@github.com/Paylik-Morocco/paylik-erp.git  --depth 1 --origin upstream
+2024-08-19 02:41:17,166 WARNING /usr/local/bin/bench get-app https://SoumayaEloualid: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@github.com/Paylik-Morocco/paylik-erp.git executed with exit code 1
+2024-08-19 02:44:24,615 INFO /usr/local/bin/bench get-app https://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@github.com/SoumayaEloualid /Paylik-Morocco/paylik-erp.git
+2024-08-19 02:44:25,467 WARNING /usr/local/bin/bench get-app https://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@github.com/SoumayaEloualid /Paylik-Morocco/paylik-erp.git executed with exit code 1
+2024-08-19 02:45:03,710 INFO /usr/local/bin/bench get-app https://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@github.com/SoumayaEloualid/Paylik-Morocco/paylik-erp.git
+2024-08-19 02:45:06,948 INFO App moved from apps/paylik-erp to archived/apps/paylik-erp-2024-08-19
+2024-08-19 02:45:06,956 LOG Getting paylik-erp
+2024-08-19 02:45:06,957 DEBUG cd ./apps && git clone https://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@github.com/SoumayaEloualid/Paylik-Morocco/paylik-erp.git  --depth 1 --origin upstream
+2024-08-19 02:45:07,375 WARNING cd ./apps && git clone https://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@github.com/SoumayaEloualid/Paylik-Morocco/paylik-erp.git  --depth 1 --origin upstream executed with exit code 128
+2024-08-19 02:45:07,376 WARNING /usr/local/bin/bench get-app https://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@github.com/SoumayaEloualid/Paylik-Morocco/paylik-erp.git executed with exit code 1
+2024-08-19 02:50:15,672 INFO /usr/local/bin/bench get-app https://github.com/SoumayaEloualid/Paylik-Morocco/paylik-erp.git
+2024-08-19 02:50:15,679 LOG Getting paylik-erp
+2024-08-19 02:50:15,679 DEBUG cd ./apps && git clone https://github.com/SoumayaEloualid/Paylik-Morocco/paylik-erp.git  --depth 1 --origin upstream
+2024-08-19 02:50:16,074 WARNING cd ./apps && git clone https://github.com/SoumayaEloualid/Paylik-Morocco/paylik-erp.git  --depth 1 --origin upstream executed with exit code 128
+2024-08-19 02:50:16,075 WARNING /usr/local/bin/bench get-app https://github.com/SoumayaEloualid/Paylik-Morocco/paylik-erp.git executed with exit code 1
+2024-08-19 03:43:44,234 INFO /usr/local/bin/bench get-app https://SoumayaEloualid:@github.com/Paylik-Morocco/paylik-erp.git
+2024-08-19 03:43:44,242 LOG Getting paylik-erp
+2024-08-19 03:43:44,243 DEBUG cd ./apps && git clone https://SoumayaEloualid:@github.com/Paylik-Morocco/paylik-erp.git  --depth 1 --origin upstream
+2024-08-19 03:43:44,963 WARNING cd ./apps && git clone https://SoumayaEloualid:@github.com/Paylik-Morocco/paylik-erp.git  --depth 1 --origin upstream executed with exit code 128
+2024-08-19 03:43:44,963 WARNING /usr/local/bin/bench get-app https://SoumayaEloualid:@github.com/Paylik-Morocco/paylik-erp.git executed with exit code 1
+2024-08-19 10:15:41,804 INFO /usr/local/bin/bench get-app https://SoumayaEloualid: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@github.com/Paylik-Morocco/paylik-erp.git
+2024-08-19 10:15:41,811 LOG Getting paylik-erp
+2024-08-19 10:15:41,811 DEBUG cd ./apps && git clone https://SoumayaEloualid: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@github.com/Paylik-Morocco/paylik-erp.git  --depth 1 --origin upstream
+2024-08-19 10:15:42,981 WARNING /usr/local/bin/bench get-app https://SoumayaEloualid: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@github.com/Paylik-Morocco/paylik-erp.git executed with exit code 1
+2024-08-19 10:18:41,310 INFO /usr/local/bin/bench --version
+2024-08-19 10:28:30,082 INFO /usr/local/bin/bench update
+2024-08-19 10:28:30,995 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-08-19 10:28:42,301 WARNING /usr/local/bin/bench update executed with exit code 1
+2024-08-19 10:28:59,014 INFO /usr/local/bin/bench migrate
+2024-08-19 10:29:06,073 INFO /usr/local/bin/bench migrate --site paylik
+2024-08-19 10:29:15,390 INFO /usr/local/bin/bench use paylik
+2024-08-19 10:29:19,700 INFO /usr/local/bin/bench migrate
+2024-08-19 10:29:27,764 INFO /usr/local/bin/bench update
+2024-08-19 10:29:28,667 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-08-19 10:29:39,504 WARNING /usr/local/bin/bench update executed with exit code 1
+2024-08-19 10:31:18,061 INFO /usr/local/bin/bench update
+2024-08-19 10:31:19,034 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-08-19 10:31:29,961 WARNING /usr/local/bin/bench update executed with exit code 1
+2024-08-19 10:41:14,358 INFO /usr/local/bin/bench get-app https://SoumayaEloualid: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@github.com/Paylik-Morocco/paylik-erp.git
+2024-08-19 10:41:16,423 INFO App moved from apps/paylik-erp to archived/apps/paylik-erp-2024-08-19_1
+2024-08-19 10:41:16,428 LOG Getting paylik-erp
+2024-08-19 10:41:16,428 DEBUG cd ./apps && git clone https://SoumayaEloualid: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@github.com/Paylik-Morocco/paylik-erp.git  --depth 1 --origin upstream
+2024-08-19 10:41:18,901 WARNING /usr/local/bin/bench get-app https://SoumayaEloualid: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@github.com/Paylik-Morocco/paylik-erp.git executed with exit code 1
+2024-08-19 11:02:02,890 INFO /usr/local/bin/bench get-app https://SoumayaEloualid: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@github.com/Paylik-Morocco/paylik-erp.git --branch paylik-359
+2024-08-19 11:02:04,624 INFO App moved from apps/paylik-erp to archived/apps/paylik-erp-2024-08-19_2
+2024-08-19 11:02:04,632 LOG Getting paylik-erp
+2024-08-19 11:02:04,632 DEBUG cd ./apps && git clone https://SoumayaEloualid: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@github.com/Paylik-Morocco/paylik-erp.git --branch paylik-359 --depth 1 --origin upstream
+2024-08-19 11:02:05,984 LOG Installing paylik_erp
+2024-08-19 11:02:05,984 DEBUG cd /home/soumaya/frappe-bench && /home/soumaya/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/soumaya/frappe-bench/apps/paylik_erp 
+2024-08-19 11:02:07,652 DEBUG bench build --app paylik_erp
+2024-08-19 11:02:07,772 INFO /usr/local/bin/bench build --app paylik_erp
+2024-08-19 11:02:09,375 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-08-19 11:02:58,193 INFO /usr/local/bin/bench --site paylik install-app paylik_erp
+2024-08-19 11:03:05,315 INFO /usr/local/bin/bench start
+2024-08-19 11:03:13,531 INFO /usr/local/bin/bench start
+2024-08-19 11:03:43,353 INFO /usr/local/bin/bench start
+2024-08-19 11:03:43,653 INFO /usr/local/bin/bench serve --port 8000
+2024-08-19 11:03:43,755 INFO /usr/local/bin/bench worker
+2024-08-19 11:03:43,804 INFO /usr/local/bin/bench watch
+2024-08-19 11:03:43,810 INFO /usr/local/bin/bench schedule
+2024-08-19 11:04:26,609 INFO /usr/local/bin/bench migrate
+2024-08-19 11:10:33,641 INFO /usr/local/bin/bench update
+2024-08-19 11:11:44,901 INFO /usr/local/bin/bench update
+2024-08-19 11:11:45,746 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-08-19 11:11:56,714 WARNING /usr/local/bin/bench update executed with exit code 1
+2024-08-19 11:12:08,611 INFO /usr/local/bin/bench migrate
+2024-08-19 11:13:14,808 INFO /usr/local/bin/bench migrate
+2024-08-19 11:13:20,405 INFO /usr/local/bin/bench start
+2024-08-19 11:13:20,683 INFO /usr/local/bin/bench watch
+2024-08-19 11:13:20,810 INFO /usr/local/bin/bench worker
+2024-08-19 11:13:20,819 INFO /usr/local/bin/bench schedule
+2024-08-19 11:13:20,833 INFO /usr/local/bin/bench serve --port 8000
+2024-08-19 11:13:24,991 INFO /usr/local/bin/bench migrate
+2024-08-19 11:17:07,363 INFO /usr/local/bin/bench --site paylik migrate
+2024-08-19 11:39:46,018 INFO /usr/local/bin/bench update
+2024-08-19 11:39:46,960 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-08-19 11:39:57,947 WARNING /usr/local/bin/bench update executed with exit code 1
+2024-08-19 11:42:51,713 INFO /usr/local/bin/bench set-config maintenance_mode 0
+2024-08-19 11:58:44,996 INFO /usr/local/bin/bench --site paylik logs
+2024-08-19 11:59:06,235 INFO /usr/local/bin/bench --site paylik migrate
+2024-08-19 12:00:01,622 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-19 12:04:43,169 INFO /usr/local/bin/bench --site paylik set-config developer_mode 1
+2024-08-19 12:04:48,118 INFO /usr/local/bin/bench migrate
+2024-08-19 12:10:29,954 INFO /usr/local/bin/bench migrate
+2024-08-19 12:16:41,212 INFO /usr/local/bin/bench start
+2024-08-19 12:16:41,535 INFO /usr/local/bin/bench schedule
+2024-08-19 12:16:41,663 INFO /usr/local/bin/bench serve --port 8000
+2024-08-19 12:16:41,740 INFO /usr/local/bin/bench watch
+2024-08-19 12:16:41,749 INFO /usr/local/bin/bench worker
+2024-08-19 12:22:28,278 INFO /usr/local/bin/bench migrate
+2024-08-19 12:26:24,442 INFO /usr/local/bin/bench uninstal-app paylik_erp
+2024-08-19 12:26:33,207 INFO /usr/local/bin/bench uninstall-app paylik_erp
+2024-08-19 12:26:47,918 INFO /usr/local/bin/bench remove-app paylik_erp
+2024-08-19 12:26:48,045 INFO /usr/local/bin/bench --site all list-apps --format json
+2024-08-19 12:26:48,604 INFO /usr/local/bin/bench --site paylik list-apps
+2024-08-19 12:26:49,045 DEBUG cd /home/soumaya/frappe-bench && /home/soumaya/frappe-bench/env/bin/python -m pip uninstall -y paylik_erp
+2024-08-19 12:26:49,556 INFO App moved from apps/paylik_erp to archived/apps/paylik_erp-2024-08-19
+2024-08-19 12:26:49,560 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-08-19 12:27:04,582 INFO /usr/local/bin/bench migrate
+2024-08-19 12:27:49,699 INFO /usr/local/bin/bench get-app https://SoumayaEloualid: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@github.com/Paylik-Morocco/paylik-erp.git
+2024-08-19 12:27:49,708 LOG Getting paylik-erp
+2024-08-19 12:27:49,708 DEBUG cd ./apps && git clone https://SoumayaEloualid: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@github.com/Paylik-Morocco/paylik-erp.git  --depth 1 --origin upstream
+2024-08-19 12:27:50,813 WARNING /usr/local/bin/bench get-app https://SoumayaEloualid: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@github.com/Paylik-Morocco/paylik-erp.git executed with exit code 1
+2024-08-19 12:28:01,380 INFO /usr/local/bin/bench get-app https://SoumayaEloualid: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@github.com/Paylik-Morocco/paylik-erp.git --branch paylik-359
+2024-08-19 12:28:02,936 INFO App moved from apps/paylik-erp to archived/apps/paylik-erp-2024-08-19_3
+2024-08-19 12:28:02,943 LOG Getting paylik-erp
+2024-08-19 12:28:02,943 DEBUG cd ./apps && git clone https://SoumayaEloualid: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@github.com/Paylik-Morocco/paylik-erp.git --branch paylik-359 --depth 1 --origin upstream
+2024-08-19 12:28:04,063 LOG Installing paylik_erp
+2024-08-19 12:28:04,064 DEBUG cd /home/soumaya/frappe-bench && /home/soumaya/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/soumaya/frappe-bench/apps/paylik_erp 
+2024-08-19 12:28:06,089 DEBUG bench build --app paylik_erp
+2024-08-19 12:28:06,223 INFO /usr/local/bin/bench build --app paylik_erp
+2024-08-19 12:28:07,958 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-08-19 12:52:30,836 INFO /usr/local/bin/bench migrate
+2024-08-19 12:52:48,540 INFO /usr/local/bin/bench start
+2024-08-19 12:52:49,002 INFO /usr/local/bin/bench schedule
+2024-08-19 12:52:49,008 INFO /usr/local/bin/bench watch
+2024-08-19 12:52:49,046 INFO /usr/local/bin/bench serve --port 8000
+2024-08-19 12:52:49,067 INFO /usr/local/bin/bench worker
+2024-08-19 12:52:52,903 INFO /usr/local/bin/bench migrate
+2024-08-19 12:53:28,887 INFO /usr/local/bin/bench --site paylik install-app paylik_erp
+2024-08-19 12:53:33,370 INFO /usr/local/bin/bench migrate
+2024-08-19 13:09:58,005 INFO /usr/local/bin/bench migrate
+2024-08-19 13:17:27,795 INFO /usr/local/bin/bench uninstall-app paylik_erp
+2024-08-19 13:17:41,673 INFO /usr/local/bin/bench remove-app paylik_erp
+2024-08-19 13:17:41,782 INFO /usr/local/bin/bench --site all list-apps --format json
+2024-08-19 13:17:42,237 INFO /usr/local/bin/bench --site paylik list-apps
+2024-08-19 13:17:42,562 DEBUG cd /home/soumaya/frappe-bench && /home/soumaya/frappe-bench/env/bin/python -m pip uninstall -y paylik_erp
+2024-08-19 13:17:43,135 INFO App moved from apps/paylik_erp to archived/apps/paylik_erp-2024-08-19_1
+2024-08-19 13:17:43,138 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-08-19 13:17:48,668 INFO /usr/local/bin/bench migrate
+2024-08-19 13:18:05,264 INFO /usr/local/bin/bench new-app paylik_erp
+2024-08-19 13:18:05,268 LOG creating new app paylik_erp
+2024-08-19 13:18:40,730 LOG Installing paylik_erp
+2024-08-19 13:18:40,731 DEBUG cd /home/soumaya/frappe-bench && /home/soumaya/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/soumaya/frappe-bench/apps/paylik_erp 
+2024-08-19 13:18:42,510 DEBUG bench build --app paylik_erp
+2024-08-19 13:18:42,620 INFO /usr/local/bin/bench build --app paylik_erp
+2024-08-19 13:18:44,257 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-08-19 13:18:54,750 INFO /usr/local/bin/bench --site paylik install-app paylik_erp
+2024-08-19 13:19:00,670 INFO /usr/local/bin/bench migrate
+2024-08-19 13:19:40,824 INFO /usr/local/bin/bench migrate
+2024-08-19 13:21:07,496 INFO /usr/local/bin/bench uninstall-app paylik_erp
+2024-08-19 13:21:17,876 INFO /usr/local/bin/bench remove-app paylik_erp
+2024-08-19 13:21:17,992 INFO /usr/local/bin/bench --site all list-apps --format json
+2024-08-19 13:21:18,468 INFO /usr/local/bin/bench --site paylik list-apps
+2024-08-19 13:21:18,848 DEBUG cd /home/soumaya/frappe-bench && /home/soumaya/frappe-bench/env/bin/python -m pip uninstall -y paylik_erp
+2024-08-19 13:21:19,384 INFO App moved from apps/paylik_erp to archived/apps/paylik_erp-2024-08-19_2
+2024-08-19 13:21:19,387 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-08-19 13:21:24,548 INFO /usr/local/bin/bench migrate
+2024-08-19 13:22:22,980 INFO /usr/local/bin/bench new-app paylik_erp
+2024-08-19 13:22:22,984 LOG creating new app paylik_erp
+2024-08-19 13:23:10,126 LOG Installing paylik_erp
+2024-08-19 13:23:10,127 DEBUG cd /home/soumaya/frappe-bench && /home/soumaya/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/soumaya/frappe-bench/apps/paylik_erp 
+2024-08-19 13:23:12,236 DEBUG bench build --app paylik_erp
+2024-08-19 13:23:12,347 INFO /usr/local/bin/bench build --app paylik_erp
+2024-08-19 13:23:13,999 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-08-19 13:23:22,879 INFO /usr/local/bin/bench --site paylik install-app paylik_erp
+2024-08-19 13:23:28,244 INFO /usr/local/bin/bench migrate
+2024-08-19 13:45:58,653 INFO /usr/local/bin/bench use paylik
+2024-08-19 13:46:01,388 INFO /usr/local/bin/bench migrate
+2024-08-19 13:46:16,027 INFO /usr/local/bin/bench start
+2024-08-19 13:46:16,418 INFO /usr/local/bin/bench worker
+2024-08-19 13:46:16,451 INFO /usr/local/bin/bench watch
+2024-08-19 13:46:16,493 INFO /usr/local/bin/bench schedule
+2024-08-19 13:46:16,496 INFO /usr/local/bin/bench serve --port 8000
+2024-08-19 13:52:57,325 INFO /usr/local/bin/bench migrate
+2024-08-19 14:01:35,900 INFO /usr/local/bin/bench migrate
+2024-08-19 14:01:51,554 INFO /usr/local/bin/bench start
+2024-08-19 14:01:51,823 INFO /usr/local/bin/bench schedule
+2024-08-19 14:01:51,828 INFO /usr/local/bin/bench serve --port 8000
+2024-08-19 14:01:51,927 INFO /usr/local/bin/bench watch
+2024-08-19 14:01:51,973 INFO /usr/local/bin/bench worker
+2024-08-19 14:43:16,613 INFO /usr/local/bin/bench --site all enable-scheduler
+2024-08-19 14:43:20,072 INFO /usr/local/bin/bench migrate
+2024-08-19 14:49:49,289 INFO /usr/local/bin/bench scheduler enable
+2024-08-19 14:49:54,676 INFO /usr/local/bin/bench migrate
+2024-08-19 14:50:00,911 INFO /usr/local/bin/bench start
+2024-08-19 14:50:01,215 INFO /usr/local/bin/bench serve --port 8000
+2024-08-19 14:50:01,292 INFO /usr/local/bin/bench watch
+2024-08-19 14:50:01,308 INFO /usr/local/bin/bench worker
+2024-08-19 14:50:01,334 INFO /usr/local/bin/bench schedule
+2024-08-19 15:02:14,783 INFO /usr/local/bin/bench scheduler enable
+2024-08-19 15:02:15,264 INFO /usr/local/bin/bench scheduler resume
+2024-08-19 23:50:28,870 INFO /usr/local/bin/bench --site paylik run-tests --module apps.paylik_erp.paylik_erp.paylik_erp.doctype.change_request.test_change_request --test setUp
+2024-08-19 23:50:36,018 INFO /usr/local/bin/bench --site paylik run-tests --module apps.paylik_erp.paylik_erp.paylik_erp.doctype.change_request.test_change_request --test setUp
+2024-08-19 23:50:47,590 INFO /usr/local/bin/bench --site paylik set-config allow_tests true
+2024-08-19 23:50:53,154 INFO /usr/local/bin/bench --site paylik run-tests --module apps.paylik_erp.paylik_erp.paylik_erp.doctype.change_request.test_change_request --test setUp
+2024-08-19 23:52:05,003 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.paylik_erp.doctype.change_request.test_change_request --test setUp
+2024-08-19 23:52:10,013 INFO /usr/local/bin/bench --site paylik run-tests --module apps.paylik_erp.paylik_erp.paylik_erp.doctype.change_request.test_change_request --test setUp
+2024-08-19 23:53:03,384 INFO /usr/local/bin/bench --site paylik run-tests --module frappe-bench.apps.paylik_erp.paylik_erp.paylik_erp.doctype.change_request.test_change_request --test setUp
+2024-08-19 23:53:18,030 INFO /usr/local/bin/bench --site paylik run-tests --module frappe_bench.apps.paylik_erp.paylik_erp.paylik_erp.doctype.change_request.test_change_request --test setUp
+2024-08-19 23:55:14,699 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test setUp
+2024-08-19 23:55:31,053 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test setUp
+2024-08-19 23:56:49,779 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test setUp
+2024-08-20 00:00:01,506 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-20 00:00:13,274 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test setUp
+2024-08-20 00:01:39,663 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 00:02:05,136 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 00:02:26,187 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 00:06:01,767 INFO /usr/local/bin/bench use paylik
+2024-08-20 00:06:07,186 INFO /usr/local/bin/bench migrate
+2024-08-20 00:06:12,993 INFO /usr/local/bin/bench start
+2024-08-20 00:06:13,592 INFO /usr/local/bin/bench worker
+2024-08-20 00:06:13,670 INFO /usr/local/bin/bench serve --port 8000
+2024-08-20 00:06:13,694 INFO /usr/local/bin/bench schedule
+2024-08-20 00:06:13,749 INFO /usr/local/bin/bench watch
+2024-08-20 00:06:19,485 INFO /usr/local/bin/bench migrate
+2024-08-20 00:06:36,451 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 00:08:50,520 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 00:09:28,914 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 00:12:25,840 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 00:12:57,184 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 00:15:47,573 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test setUp
+2024-08-20 00:15:54,697 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 00:19:32,583 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 00:19:51,167 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 00:20:14,175 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 00:20:57,429 INFO /usr/local/bin/bench start
+2024-08-20 00:20:57,664 INFO /usr/local/bin/bench watch
+2024-08-20 00:20:57,716 INFO /usr/local/bin/bench schedule
+2024-08-20 00:20:57,736 INFO /usr/local/bin/bench worker
+2024-08-20 00:20:57,799 INFO /usr/local/bin/bench serve --port 8000
+2024-08-20 00:22:09,298 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 00:22:38,270 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 00:23:01,123 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_change_request_workflow
+2024-08-20 00:23:51,913 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_change_request_workflow
+2024-08-20 00:24:05,304 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_change_request_workflow
+2024-08-20 00:25:46,194 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_change_request_workflow
+2024-08-20 00:27:03,745 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test tearDown
+2024-08-20 00:27:14,142 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_change_request_workflow
+2024-08-20 00:29:51,437 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 00:30:06,010 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 01:06:55,925 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 01:14:27,726 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_update_change_request
+2024-08-20 01:15:32,126 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_mandatory_fields
+2024-08-20 01:16:02,579 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_mandatory_fields
+2024-08-20 01:18:52,300 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_mandatory_fieldsbench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 01:19:05,492 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 01:20:15,719 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 01:20:25,836 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 01:24:31,754 INFO /usr/local/bin/bench migrate
+2024-08-20 01:25:31,637 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
+2024-08-20 01:25:39,988 INFO /usr/local/bin/bench --site paylik run-tests --module paylik_erp.paylik_erp.doctype.change_request.test_change_request --test test_create_change_request
